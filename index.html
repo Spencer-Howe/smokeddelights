@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Smoked Delights | Smoked Meats &amp; BBQ Catering | Montana</title>
+  <meta name="description" content="Slow-smoked brisket, pulled pork, ribs and BBQ catering in Montana. Order by the pound or book catering for your event.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --char:#1b1714; --char2:#2a231e; --ember:#d9622b; --ember2:#b84d1d; --paper:#f4ecdf; --kraft:#e6d6bd; --smoke:#8b8178; --ink:#201a16; --muted:#6a5f56; }
+    body { font-family:'Inter',sans-serif; background:var(--paper); color:var(--ink); margin:0; }
+    h1,h2,h3,.cond { font-family:'Oswald',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.5px; }
+    a { color:var(--ember2); }
+
+    .topnav { background:var(--char); color:var(--paper); }
+    .topnav .brand { font-family:'Oswald',sans-serif; font-size:1.4rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--paper); text-decoration:none; }
+    .topnav .brand i { color:var(--ember); }
+    .topnav .call { color:var(--paper); text-decoration:none; font-weight:600; font-size:.95rem; }
+    .topnav .call i { color:var(--ember); }
+
+    .hero { background:
+        radial-gradient(ellipse at 50% 120%, rgba(217,98,43,.45) 0, transparent 60%),
+        radial-gradient(circle at 15% 10%, rgba(139,129,120,.18) 0, transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(139,129,120,.14) 0, transparent 35%), var(--char);
+      color:var(--paper); padding:100px 0 92px; text-align:center; }
+    .hero .kicker { color:var(--ember); font-weight:600; letter-spacing:3px; text-transform:uppercase; font-size:.78rem; }
+    .hero h1 { font-size:clamp(2.8rem,8vw,5.2rem); line-height:.98; margin:16px 0 18px; }
+    .hero h1 span { color:var(--ember); }
+    .hero .lead { font-size:clamp(1.05rem,2.3vw,1.3rem); color:rgba(244,236,223,.85); max-width:660px; margin:0 auto 30px; }
+    .badges { margin-top:34px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+    .badge-pill { border:1px solid rgba(217,98,43,.55); color:var(--paper); border-radius:4px; padding:7px 16px; font-size:.85rem; font-weight:500; }
+    .badge-pill i { color:var(--ember); margin-right:6px; }
+    .btn-ember { background:var(--ember); color:#fff; font-weight:700; border:none; padding:13px 30px; border-radius:6px; text-transform:uppercase; letter-spacing:1px; font-size:.95rem; }
+    .btn-ember:hover { background:var(--ember2); color:#fff; }
+    .btn-ghost { border:1.5px solid var(--paper); color:var(--paper); font-weight:600; padding:11.5px 28px; border-radius:6px; background:transparent; text-transform:uppercase; letter-spacing:1px; font-size:.95rem; }
+    .btn-ghost:hover { background:var(--paper); color:var(--char); }
+
+    .section { padding:80px 0; }
+    .eyebrow { color:var(--ember2); font-weight:700; letter-spacing:2.5px; text-transform:uppercase; font-size:.75rem; margin-bottom:8px; }
+    .section h2 { font-size:clamp(2rem,4.5vw,2.9rem); color:var(--char); }
+
+    .menu-board { background:var(--char2); color:var(--paper); border-radius:10px; padding:38px; box-shadow:0 14px 34px rgba(27,23,20,.18); }
+    .menu-board h3 { color:var(--ember); font-size:1.35rem; border-bottom:1px solid rgba(244,236,223,.15); padding-bottom:10px; margin-bottom:6px; }
+    .menu-board ul { list-style:none; padding:0; margin:0 0 26px; }
+    .menu-board li { display:flex; align-items:baseline; gap:8px; padding:9px 0; }
+    .menu-board li .n { font-weight:600; }
+    .menu-board li .d { color:rgba(244,236,223,.6); font-size:.85rem; display:block; font-weight:400; }
+    .menu-board li .dots { flex:1; border-bottom:1px dotted rgba(244,236,223,.25); transform:translateY(-4px); }
+    .menu-board li .p { font-family:'Oswald',sans-serif; color:var(--paper); white-space:nowrap; }
+    .fill { background:#ffe7c2; color:#5a3a12; border-radius:3px; padding:0 4px; }
+
+    .pkg { background:#fff; border:1px solid var(--kraft); border-radius:10px; padding:30px; height:100%; position:relative; }
+    .pkg.pop { border:2px solid var(--ember); }
+    .pkg .tag { position:absolute; top:-12px; left:30px; background:var(--ember); color:#fff; font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:4px 10px; border-radius:3px; }
+    .pkg h3 { font-size:1.5rem; color:var(--char); margin:0 0 4px; }
+    .pkg .pp { font-family:'Oswald',sans-serif; font-size:2rem; color:var(--ember2); }
+    .pkg .pp small { font-family:'Inter',sans-serif; font-size:.8rem; color:var(--muted); }
+    .pkg ul { padding-left:0; list-style:none; margin:16px 0 0; color:var(--muted); }
+    .pkg li { padding:6px 0; }
+    .pkg li i { color:var(--ember); margin-right:8px; }
+
+    .kraft { background:var(--kraft); }
+    .step-num { font-family:'Oswald',sans-serif; font-size:3rem; color:var(--ember); line-height:1; }
+    .step h3 { font-size:1.35rem; color:var(--char); margin:6px 0; }
+    .step p { color:var(--muted); margin:0; }
+
+    .photo-slot { border:2px dashed #c4b394; border-radius:10px; aspect-ratio:4/5; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#8f7f63; background:#efe5d4; text-align:center; padding:12px; }
+    .photo-slot.wide { aspect-ratio:4/3; }
+    .photo-slot i { font-size:2rem; margin-bottom:6px; }
+
+    .booking { background:#fff; border:1px solid var(--kraft); border-radius:12px; padding:36px; box-shadow:0 10px 30px rgba(27,23,20,.06); }
+    .booking label { font-weight:600; font-size:.9rem; margin-bottom:4px; }
+    .booking .form-control, .booking .form-select { border-radius:8px; padding:11px 13px; border-color:#ddd1bd; }
+    .choice { display:flex; flex-wrap:wrap; gap:8px; }
+    .choice input { display:none; }
+    .choice label { border:1.5px solid #ddd1bd; border-radius:6px; padding:8px 16px; cursor:pointer; font-weight:500; margin:0; }
+    .choice input:checked + label { background:var(--char); border-color:var(--char); color:#fff; }
+    .est { background:var(--paper); border-radius:8px; padding:14px 18px; display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }
+    .est .amt { font-family:'Oswald',sans-serif; font-size:1.5rem; color:var(--ember2); }
+
+    .faq .accordion-button { font-weight:600; color:var(--char); }
+    .faq .accordion-button:not(.collapsed) { background:var(--paper); box-shadow:none; color:var(--ember2); }
+    .faq .accordion-body { color:var(--muted); line-height:1.7; }
+
+    .cta { background:var(--char); color:var(--paper); text-align:center; }
+    .cta h2 { color:var(--paper); }
+    .cta .big-phone { font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(2.2rem,6vw,3.2rem); color:var(--ember); text-decoration:none; }
+
+    footer { background:#120f0d; color:rgba(244,236,223,.65); font-size:.85rem; padding:26px 0 90px; }
+    footer a { color:var(--ember); }
+
+    .mobile-call { position:fixed; bottom:0; left:0; right:0; display:flex; z-index:50; box-shadow:0 -4px 14px rgba(0,0,0,.2); }
+    .mobile-call a { flex:1; text-align:center; padding:15px; font-weight:600; text-decoration:none; }
+    .mobile-call .c { background:var(--ember); color:#fff; }
+    .mobile-call .t { background:var(--char); color:#fff; }
+    @media (min-width:768px) { .mobile-call { display:none; } footer { padding-bottom:26px; } }
+    @media (max-width:575px) { .menu-board, .booking { padding:24px; } }
+  </style>
+</head>
+<body>
+
+<!-- TODO: swap PHONE (tel:/sms: links + display), TOWN, owner name, menu, socials once they send them -->
+<nav class="topnav py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="#" class="brand"><i class="bi bi-fire me-1"></i> Smoked Delights</a>
+    <a href="tel:+1406" class="call"><i class="bi bi-telephone-fill me-1"></i> <span class="fill">(406) ___-____</span></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="kicker">Smoked Meats &amp; Catering · <span class="fill">[Town]</span>, Montana</div>
+    <h1>Low and slow.<br><span>Done right.</span></h1>
+    <p class="lead">Brisket, pulled pork and ribs smoked for hours over real wood. Order by the pound, or let us feed your whole crew.</p>
+    <div class="d-flex flex-wrap gap-3 justify-content-center">
+      <a href="#menu" class="btn btn-ember btn-lg">See the Menu</a>
+      <a href="#cater" class="btn btn-ghost btn-lg">Book Catering</a>
+    </div>
+    <div class="badges">
+      <span class="badge-pill"><i class="bi bi-tree-fill"></i>Real Wood Smoke</span>
+      <span class="badge-pill"><i class="bi bi-people-fill"></i>Catering 10 to <span class="fill">[__]</span></span>
+      <span class="badge-pill"><i class="bi bi-geo-alt-fill"></i>Montana Made</span>
+    </div>
+  </div>
+</header>
+
+<!-- MENU -->
+<section class="section" id="menu">
+  <div class="container" style="max-width:960px;">
+    <div class="text-center mb-5">
+      <div class="eyebrow">The Menu</div>
+      <h2>Off the smoker</h2>
+      <p style="color:var(--muted);">Pre-order by the pound for pickup. <span class="fill">[Pickup days / location]</span></p>
+    </div>
+    <div class="menu-board">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3>Meats <small style="font-size:.75rem;color:rgba(244,236,223,.55);">by the pound</small></h3>
+          <ul>
+            <li><span class="n">Brisket<span class="d">Salt and pepper rub, sliced or chopped</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Pulled Pork<span class="d">Smoked pork shoulder, hand pulled</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Pork Ribs<span class="d">Full or half rack</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Smoked Chicken<span class="d">Thighs or half bird</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Sausage<span class="d">Smoked links</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Sides <small style="font-size:.75rem;color:rgba(244,236,223,.55);">pint / quart</small></h3>
+          <ul>
+            <li><span class="n">Mac &amp; Cheese</span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Baked Beans<span class="d">With burnt ends</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Coleslaw</span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Potato Salad</span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Cornbread</span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+          </ul>
+          <h3>Extras</h3>
+          <ul class="mb-0">
+            <li><span class="n">House BBQ Sauce<span class="d">By the bottle</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Rolls / Buns<span class="d">Per dozen</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-3 mb-0" style="color:var(--muted);font-size:.9rem;">Menu changes with the season. Text to see what's on the smoker this week.</p>
+  </div>
+</section>
+
+<!-- CATERING PACKAGES -->
+<section class="section kraft" id="packages">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow">Catering</div>
+      <h2>Feed the whole crowd</h2>
+      <p style="color:var(--muted);">Weddings, graduations, branding days, office lunches and family reunions.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="pkg">
+        <h3>Pickup Tray</h3>
+        <div class="pp"><span class="fill">$__</span> <small>/ person</small></div>
+        <ul>
+          <li><i class="bi bi-check-lg"></i>1 meat, 2 sides</li>
+          <li><i class="bi bi-check-lg"></i>Rolls and sauce</li>
+          <li><i class="bi bi-check-lg"></i>You pick it up hot</li>
+          <li><i class="bi bi-check-lg"></i>Good for 10+</li>
+        </ul>
+      </div></div>
+      <div class="col-md-4"><div class="pkg pop">
+        <span class="tag">Most Popular</span>
+        <h3>Drop-Off</h3>
+        <div class="pp"><span class="fill">$__</span> <small>/ person</small></div>
+        <ul>
+          <li><i class="bi bi-check-lg"></i>2 meats, 3 sides</li>
+          <li><i class="bi bi-check-lg"></i>Rolls, sauce, plates, utensils</li>
+          <li><i class="bi bi-check-lg"></i>Delivered and set out</li>
+          <li><i class="bi bi-check-lg"></i>Good for 25+</li>
+        </ul>
+      </div></div>
+      <div class="col-md-4"><div class="pkg">
+        <h3>Full Service</h3>
+        <div class="pp"><span class="fill">$__</span> <small>/ person</small></div>
+        <ul>
+          <li><i class="bi bi-check-lg"></i>3 meats, 3 sides</li>
+          <li><i class="bi bi-check-lg"></i>Buffet setup and serving</li>
+          <li><i class="bi bi-check-lg"></i>Cleanup when you're done</li>
+          <li><i class="bi bi-check-lg"></i>Good for 50+</li>
+        </ul>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow">How Catering Works</div>
+      <h2>Three steps to dinner</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4 step">
+        <div class="step-num">01</div>
+        <h3>Send your date</h3>
+        <p>Fill out the form with your headcount and what you're thinking.</p>
+      </div>
+      <div class="col-md-4 step">
+        <div class="step-num">02</div>
+        <h3>We build the menu</h3>
+        <p>We'll text or call to go over meats, sides and a final price.</p>
+      </div>
+      <div class="col-md-4 step">
+        <div class="step-num">03</div>
+        <h3>Everybody eats</h3>
+        <p>Pick it up, have it dropped off, or let us run the whole line.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-5"><div class="photo-slot"><i class="bi bi-camera"></i>Photo at the smoker</div></div>
+      <div class="col-md-7">
+        <div class="eyebrow">Who We Are</div>
+        <h2>Smoked in <span class="fill">[Town]</span></h2>
+        <p style="color:var(--muted);line-height:1.8;font-size:1.05rem;">Smoked Delights started the way most good BBQ does: cooking for friends and family until people started asking to buy it. Every brisket still gets the same long cook over real wood.</p>
+        <p style="color:var(--muted);line-height:1.8;font-size:1.05rem;"><span class="fill">[Owner name(s), how you got started, what wood you use, smoker you cook on, etc.]</span></p>
+        <a href="#" class="btn btn-outline-dark px-4 mt-2" style="border-radius:6px;"><i class="bi bi-facebook me-2"></i><span class="fill">[Facebook / Instagram]</span></a>
+      </div>
+    </div>
+    <div class="row g-3 mt-4">
+      <div class="col-6 col-md-3"><div class="photo-slot wide"><i class="bi bi-image"></i>Brisket</div></div>
+      <div class="col-6 col-md-3"><div class="photo-slot wide"><i class="bi bi-image"></i>Ribs</div></div>
+      <div class="col-6 col-md-3"><div class="photo-slot wide"><i class="bi bi-image"></i>Catering spread</div></div>
+      <div class="col-6 col-md-3"><div class="photo-slot wide"><i class="bi bi-image"></i>The smoker</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING FORM -->
+<section class="section kraft" id="cater">
+  <div class="container" style="max-width:820px;">
+    <div class="text-center mb-4">
+      <div class="eyebrow">Book</div>
+      <h2>Request catering or a pre-order</h2>
+      <p style="color:var(--muted);">Tell us about your event. We'll get back to you with a menu and price.</p>
+    </div>
+    <form class="booking" id="bookForm" action="https://formspree.io/f/mwlkqzwp" method="POST">
+      <input type="hidden" name="_subject" value="Smoked Delights - New catering request (preview)">
+
+      <div class="mb-4">
+        <label class="d-block mb-2">What do you need?</label>
+        <div class="choice" id="pkgChoice">
+          <input type="radio" name="package" id="p0" value="Pre-order by the pound" checked><label for="p0">Pre-order by the lb</label>
+          <input type="radio" name="package" id="p1" value="Pickup Tray"><label for="p1">Pickup Tray</label>
+          <input type="radio" name="package" id="p2" value="Drop-Off"><label for="p2">Drop-Off</label>
+          <input type="radio" name="package" id="p3" value="Full Service"><label for="p3">Full Service</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="d-block mb-2">Meats you want</label>
+        <div class="choice">
+          <input type="checkbox" name="meats" id="m1" value="Brisket"><label for="m1">Brisket</label>
+          <input type="checkbox" name="meats" id="m2" value="Pulled Pork"><label for="m2">Pulled Pork</label>
+          <input type="checkbox" name="meats" id="m3" value="Ribs"><label for="m3">Ribs</label>
+          <input type="checkbox" name="meats" id="m4" value="Chicken"><label for="m4">Chicken</label>
+          <input type="checkbox" name="meats" id="m5" value="Sausage"><label for="m5">Sausage</label>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6"><label>Name *</label><input class="form-control" name="name" required></div>
+        <div class="col-md-6"><label>Phone *</label><input class="form-control" type="tel" name="phone" required placeholder="(406) 555-0000"></div>
+        <div class="col-md-6"><label>Date needed *</label><input class="form-control" type="date" name="event_date" required></div>
+        <div class="col-md-6"><label id="countLabel">About how many pounds?</label><input class="form-control" type="number" name="headcount" id="headcount" min="1" placeholder="5"></div>
+        <div class="col-12" id="addrWrap" style="display:none;"><label>Event address</label><input class="form-control" name="address" placeholder="Street, town"></div>
+        <div class="col-md-6"><label>Email</label><input class="form-control" type="email" name="email"></div>
+        <div class="col-md-6"><label>Type of event</label><input class="form-control" name="event_type" placeholder="Wedding, branding, office lunch..."></div>
+        <div class="col-12"><label>Anything else?</label><textarea class="form-control" name="notes" rows="3" placeholder="Sides you want, serving time, allergies..."></textarea></div>
+      </div>
+
+      <div class="est mt-4" id="estBox" style="display:none;">
+        <span style="color:var(--muted);font-size:.9rem;">Ballpark estimate<br><small>Final price confirmed after we talk.</small></span>
+        <span class="amt" id="estAmt"><span class="fill">$__</span></span>
+      </div>
+
+      <button type="submit" class="btn btn-ember btn-lg w-100 mt-4">Send Request</button>
+      <div id="formMsg" class="text-center mt-3" style="display:none;"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width:820px;">
+    <div class="text-center mb-4">
+      <div class="eyebrow">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+    <div class="accordion faq" id="faq">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">How far ahead do I need to order?</button></h2>
+        <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Brisket takes most of a day on the smoker, so give us at least <span class="fill">[__]</span> days for pre-orders and <span class="fill">[__]</span> weeks for catering.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">How much meat per person?</button></h2>
+        <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Plan on about a half pound of cooked meat per adult, a little more if it's a hungry crowd. We'll help you figure it out.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Do you deliver?</button></h2>
+        <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes, for catering orders. <span class="fill">[Delivery area and any fee]</span></div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Is there a deposit?</button></h2>
+        <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body"><span class="fill">[Deposit amount and how to pay]</span></div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">Can you work around allergies?</button></h2>
+        <div id="f5" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Let us know in the form and we'll tell you what's in each dish.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="container">
+    <h2 class="mb-2">Hungry yet?</h2>
+    <p class="mb-3" style="font-size:1.1rem;color:rgba(244,236,223,.85);">Call or text to order.</p>
+    <a href="tel:+1406" class="big-phone">(406) ___-____</a>
+    <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+      <a href="#cater" class="btn btn-ember btn-lg">Book Catering</a>
+      <a href="#menu" class="btn btn-ghost btn-lg">See the Menu</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Smoked Delights · <span class="fill">[Town]</span>, MT · <a href="tel:+1406">(406) ___-____</a></span>
+      <span>Preview site by <a href="https://howedigitalsystems.com/launch" target="_blank" rel="noopener">Howe Digital Systems</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call">
+  <a href="#cater" class="c"><i class="bi bi-fire me-2"></i>Order</a>
+  <a href="sms:+1406" class="t"><i class="bi bi-chat-dots-fill me-2"></i>Text Us</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Per-person prices for the estimate. Leave 0 until real prices are in; estimate box stays hidden.
+  var PRICE = { 'Pickup Tray': 0, 'Drop-Off': 0, 'Full Service': 0 };
+
+  var form = document.getElementById('bookForm');
+  function update() {
+    var pkg = form.querySelector('input[name=package]:checked').value;
+    var byLb = pkg === 'Pre-order by the pound';
+    document.getElementById('countLabel').textContent = byLb ? 'About how many pounds?' : 'Headcount';
+    document.getElementById('headcount').placeholder = byLb ? '5' : '50';
+    document.getElementById('addrWrap').style.display = (pkg === 'Drop-Off' || pkg === 'Full Service') ? '' : 'none';
+    var n = parseInt(document.getElementById('headcount').value, 10) || 0;
+    var p = PRICE[pkg] || 0;
+    var box = document.getElementById('estBox');
+    if (!byLb && n > 0) {
+      box.style.display = '';
+      document.getElementById('estAmt').innerHTML = p ? '$' + (p * n).toLocaleString() : '<span class="fill">$__</span>';
+    } else {
+      box.style.display = 'none';
+    }
+  }
+  form.addEventListener('change', update);
+  form.addEventListener('input', update);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = document.getElementById('formMsg');
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (!r.ok) throw new Error();
+        form.reset(); update();
+        msg.style.color = '#2a231e';
+        msg.textContent = "Thanks! We'll be in touch to go over your order.";
+      })
+      .catch(function () {
+        msg.style.color = '#b84d1d';
+        msg.textContent = 'Something went wrong. Please call or text us.';
+      })
+      .finally(function () { msg.style.display = ''; btn.disabled = false; });
+  });
+</script>
+
+</body>
+</html>
