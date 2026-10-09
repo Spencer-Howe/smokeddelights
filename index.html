@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Smoked Delights BBQ | Mobile BBQ Catering | Norco, CA</title>
-  <meta name="description" content="Family owned mobile BBQ catering in Norco and the Inland Empire. Smoked tri-tip, tri-tip mac n cheese, esquite and flavored lemonades. Call or text 951-588-7901.">
+  <meta name="description" content="Family owned mobile BBQ catering in Norco and the Inland Empire. Smoked tri-tip, tri-tip mac n cheese, esquite, jerky, cookies and flavored lemonades. Call or text 951-588-7901.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#1b1714">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -28,6 +32,9 @@
       color:var(--paper); padding:100px 0 92px; text-align:center; }
     .hero .kicker { color:var(--ember); font-weight:600; letter-spacing:3px; text-transform:uppercase; font-size:.78rem; }
     .hero h1 { font-size:clamp(2.8rem,8vw,5.2rem); line-height:.98; margin:16px 0 18px; }
+    .hero-logo { width:150px; height:150px; border-radius:50%; display:block; margin:0 auto 22px; box-shadow:0 0 0 3px rgba(217,98,43,.55), 0 0 50px rgba(217,98,43,.35); }
+    .nav-logo { width:42px; height:42px; border-radius:50%; margin-right:10px; box-shadow:0 0 0 2px rgba(217,98,43,.5); }
+    @media (max-width:575px) { .hero { padding-top:56px; } .hero-logo { width:118px; height:118px; margin-bottom:16px; } .nav-logo { width:36px; height:36px; } .topnav .brand { font-size:1.15rem; } }
     .hero h1 span { color:var(--ember); }
     .hero .lead { font-size:clamp(1.05rem,2.3vw,1.3rem); color:rgba(244,236,223,.85); max-width:660px; margin:0 auto 30px; }
     .badges { margin-top:34px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
@@ -104,7 +111,7 @@
 
 <nav class="topnav py-3">
   <div class="container d-flex justify-content-between align-items-center">
-    <a href="#" class="brand"><i class="bi bi-fire me-1"></i> Smoked Delights</a>
+    <a href="#" class="brand d-flex align-items-center"><img src="img/logo.jpg" alt="" class="nav-logo">Smoked Delights</a>
     <a href="tel:+19515887901" class="call"><i class="bi bi-telephone-fill me-1"></i> (951) 588-7901</a>
   </div>
 </nav>
@@ -112,9 +119,10 @@
 <!-- HERO -->
 <header class="hero">
   <div class="container">
-    <div class="kicker">Mobile BBQ Catering · Norco, California</div>
+    <img src="img/logo.jpg" alt="Smoked Delights logo" class="hero-logo">
+    <div class="kicker">Mobile BBQ Catering · Norco, CA</div>
     <h1>Low and slow.<br><span>Done right.</span></h1>
-    <p class="lead">Smoked tri-tip, loaded mac n cheese and flavored lemonades. Family owned since 2020, catering parties and events all over the Inland Empire.</p>
+    <p class="lead">Smoked tri-tip, loaded mac n cheese, jerky, cookies and flavored lemonades. Family owned since 2020, catering parties and events all over the Inland Empire.</p>
     <div class="d-flex flex-wrap gap-3 justify-content-center">
       <a href="#cater" class="btn btn-ember btn-lg">Book Catering</a>
       <a href="#menu" class="btn btn-ghost btn-lg">See the Menu</a>
@@ -158,7 +166,11 @@
             <li><span class="n">Mac n Cheese</span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
             <li><span class="n">Esquite<span class="d">Mexican street corn in a cup</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
             <li><span class="n"><span class="fill">[Beans?]</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
-            <li><span class="n"><span class="fill">[Other side?]</span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+          </ul>
+          <h3>Jerky &amp; Sweets</h3>
+          <ul>
+            <li><span class="n">Smoked Jerky<span class="d"><span class="fill">[Flavors / bag size]</span></span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
+            <li><span class="n">Cookies<span class="d"><span class="fill">[Kinds]</span></span></span><span class="dots"></span><span class="p"><span class="fill">$__</span></span></li>
           </ul>
           <h3>Drinks</h3>
           <ul class="mb-0">
@@ -294,6 +306,8 @@
           <input type="checkbox" name="items" id="m2" value="Tri-Tip Mac n Cheese"><label for="m2">Tri-Tip Mac</label>
           <input type="checkbox" name="items" id="m3" value="Esquite"><label for="m3">Esquite</label>
           <input type="checkbox" name="items" id="m4" value="Flavored Lemonades"><label for="m4">Lemonades</label>
+          <input type="checkbox" name="items" id="m6" value="Jerky"><label for="m6">Jerky</label>
+          <input type="checkbox" name="items" id="m7" value="Cookies"><label for="m7">Cookies</label>
           <input type="checkbox" name="items" id="m5" value="Not sure, help me pick"><label for="m5">Help me pick</label>
         </div>
       </div>
