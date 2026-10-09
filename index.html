@@ -1205,6 +1205,96 @@ align-self:flex-start;
 margin-bottom:22px;
 }
 
+/* Google / Yelp / Instagram links */
+.social-links{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.social-pill{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:9px 16px 9px 12px;
+border-radius:40px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.18);
+color:#fff;
+font-size:14px;
+font-weight:500;
+transition:.3s;
+}
+
+.social-pill:hover{
+background:rgba(255,255,255,.16);
+transform:translateY(-2px);
+}
+
+.social-pill svg,
+.nav-social svg{
+width:20px;
+height:20px;
+flex:none;
+}
+
+.social-pill b{
+color:var(--gold2);
+font-weight:600;
+}
+
+.hero-social{
+margin-top:22px;
+}
+
+.review-cta{
+margin-top:50px;
+text-align:center;
+}
+
+.review-cta p{
+color:var(--gray);
+margin-bottom:16px;
+}
+
+.review-cta .social-links{
+justify-content:center;
+}
+
+.footer-social{
+margin-top:20px;
+}
+
+.nav-social{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.nav-social a{
+display:flex;
+opacity:.9;
+transition:.2s;
+}
+
+.nav-social a:hover{
+opacity:1;
+transform:translateY(-2px);
+}
+
+@media(max-width:650px){
+
+.hero-social{
+justify-content:center;
+}
+
+.social-pill{
+font-size:13px;
+padding:8px 14px 8px 10px;
+}
+
+}
+
 img.missing{
 visibility:hidden;
 }
@@ -1263,6 +1353,12 @@ onclick="toggleMenu()">
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#reviews">Reviews</a></li>
 
+<li class="nav-social">
+<a href="https://www.google.com/search?kgmid=/g/11tx5xn1jg" target="_blank" rel="noopener" aria-label="Smoked Delights on Google"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8l3.6-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.3 9.1 5.4 12 5.4z"/></svg></a>
+<a href="https://www.yelp.com/biz/smoked-delights-norco" target="_blank" rel="noopener" aria-label="Smoked Delights on Yelp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF1A1A" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm-.4 4.2c.6-.1 1 .3 1 .9v5.1c0 .7-.8 1-1.3.6L8.3 8.9c-.4-.4-.3-1 .2-1.3.9-.9 2-1.6 3.1-1.9zm5.2 5c.5-.2 1.1.1 1.2.7.2 1 .1 2-.2 3-.2.5-.7.7-1.2.5l-3.1-1.3c-.6-.3-.6-1.1 0-1.4l3.3-1.5zm-7.6 2.6 3.4-.9c.6-.2 1.1.5.8 1l-1.9 3.1c-.3.5-1 .5-1.3.1-.6-.8-1-1.7-1.2-2.6-.1-.3.1-.6.2-.7zm5.3 1.6 2.5 2.4c.4.4.3 1-.1 1.3-.8.6-1.8 1-2.8 1.1-.5.1-1-.3-1-.8l.1-3.5c0-.6.8-.9 1.3-.5z"/></svg></a>
+<a href="https://www.instagram.com/smokeddelightsllc/" target="_blank" rel="noopener" aria-label="Smoked Delights on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igG1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igG1)"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#fff"/></svg></a>
+</li>
+
 <li>
 <a href="#booking"
 class="nav-book">
@@ -1316,6 +1412,12 @@ class="btn btn-outline">
 📞 Call Now
 </a>
 
+</div>
+
+<div class="social-links hero-social">
+<a href="https://www.google.com/search?kgmid=/g/11tx5xn1jg" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8l3.6-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.3 9.1 5.4 12 5.4z"/></svg><span>Google</span></a>
+<a href="https://www.yelp.com/biz/smoked-delights-norco" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF1A1A" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm-.4 4.2c.6-.1 1 .3 1 .9v5.1c0 .7-.8 1-1.3.6L8.3 8.9c-.4-.4-.3-1 .2-1.3.9-.9 2-1.6 3.1-1.9zm5.2 5c.5-.2 1.1.1 1.2.7.2 1 .1 2-.2 3-.2.5-.7.7-1.2.5l-3.1-1.3c-.6-.3-.6-1.1 0-1.4l3.3-1.5zm-7.6 2.6 3.4-.9c.6-.2 1.1.5.8 1l-1.9 3.1c-.3.5-1 .5-1.3.1-.6-.8-1-1.7-1.2-2.6-.1-.3.1-.6.2-.7zm5.3 1.6 2.5 2.4c.4.4.3 1-.1 1.3-.8.6-1.8 1-2.8 1.1-.5.1-1-.3-1-.8l.1-3.5c0-.6.8-.9 1.3-.5z"/></svg><span>Yelp <b>4.7★</b></span></a>
+<a href="https://www.instagram.com/smokeddelightsllc/" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igG2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igG2)"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#fff"/></svg><span>Instagram</span></a>
 </div>
 
 </div>
@@ -2447,10 +2549,18 @@ Christina V.
 
 </div>
 
+<div class="review-cta">
+<p>See all our reviews, or leave one after your event!</p>
+<div class="social-links">
+<a href="https://www.google.com/search?kgmid=/g/11tx5xn1jg" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8l3.6-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.3 9.1 5.4 12 5.4z"/></svg><span>Google</span></a>
+<a href="https://www.yelp.com/biz/smoked-delights-norco" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF1A1A" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm-.4 4.2c.6-.1 1 .3 1 .9v5.1c0 .7-.8 1-1.3.6L8.3 8.9c-.4-.4-.3-1 .2-1.3.9-.9 2-1.6 3.1-1.9zm5.2 5c.5-.2 1.1.1 1.2.7.2 1 .1 2-.2 3-.2.5-.7.7-1.2.5l-3.1-1.3c-.6-.3-.6-1.1 0-1.4l3.3-1.5zm-7.6 2.6 3.4-.9c.6-.2 1.1.5.8 1l-1.9 3.1c-.3.5-1 .5-1.3.1-.6-.8-1-1.7-1.2-2.6-.1-.3.1-.6.2-.7zm5.3 1.6 2.5 2.4c.4.4.3 1-.1 1.3-.8.6-1.8 1-2.8 1.1-.5.1-1-.3-1-.8l.1-3.5c0-.6.8-.9 1.3-.5z"/></svg><span>Yelp <b>4.7★</b></span></a>
+<a href="https://www.instagram.com/smokeddelightsllc/" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igG3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igG3)"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#fff"/></svg><span>Instagram</span></a>
+</div>
+</div>
+
 </div>
 
 </section>
-
 
 <!-- CONTACT -->
 
@@ -2499,6 +2609,14 @@ Christina V.
 <div>
 <h4>Instagram</h4>
 <p><a href="https://www.instagram.com/smokeddelightsllc/" target="_blank">@smokeddelightsllc</a></p>
+</div>
+</div>
+
+<div class="contact-row">
+<div class="contact-icon">⭐</div>
+<div>
+<h4>Reviews</h4>
+<p><a href="https://www.google.com/search?kgmid=/g/11tx5xn1jg" target="_blank" rel="noopener">Google</a> · <a href="https://www.yelp.com/biz/smoked-delights-norco" target="_blank" rel="noopener">Yelp (4.7★)</a></p>
 </div>
 </div>
 
@@ -2554,6 +2672,12 @@ Smoked meats, street tacos, churro bars and
 more for birthdays, weddings, corporate
 events and every occasion in between.
 </p>
+
+<div class="social-links footer-social">
+<a href="https://www.google.com/search?kgmid=/g/11tx5xn1jg" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8l3.6-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.6 2.8C6.6 7.3 9.1 5.4 12 5.4z"/></svg><span>Google</span></a>
+<a href="https://www.yelp.com/biz/smoked-delights-norco" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF1A1A" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm-.4 4.2c.6-.1 1 .3 1 .9v5.1c0 .7-.8 1-1.3.6L8.3 8.9c-.4-.4-.3-1 .2-1.3.9-.9 2-1.6 3.1-1.9zm5.2 5c.5-.2 1.1.1 1.2.7.2 1 .1 2-.2 3-.2.5-.7.7-1.2.5l-3.1-1.3c-.6-.3-.6-1.1 0-1.4l3.3-1.5zm-7.6 2.6 3.4-.9c.6-.2 1.1.5.8 1l-1.9 3.1c-.3.5-1 .5-1.3.1-.6-.8-1-1.7-1.2-2.6-.1-.3.1-.6.2-.7zm5.3 1.6 2.5 2.4c.4.4.3 1-.1 1.3-.8.6-1.8 1-2.8 1.1-.5.1-1-.3-1-.8l.1-3.5c0-.6.8-.9 1.3-.5z"/></svg><span>Yelp <b>4.7★</b></span></a>
+<a href="https://www.instagram.com/smokeddelightsllc/" target="_blank" rel="noopener" class="social-pill"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igG4" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igG4)"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#fff"/></svg><span>Instagram</span></a>
+</div>
 
 </div>
 
