@@ -36,7 +36,7 @@ Hosted on GitHub Pages from the `main` branch (Settings → Pages).
 
 To use a custom domain, add a `CNAME` file containing the domain (for example `smokeddelightsbbq.com`) and point the domain's DNS to GitHub Pages.
 
-**Before launch:** remove the `<meta name="robots" content="noindex, nofollow">` line in `index.html` so search engines can find the site.
+Live at https://smokeddelightscatering.com
 
 ## Credits
 
